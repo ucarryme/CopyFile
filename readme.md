@@ -30,3 +30,7 @@ git remote add origin https://github.com/ucarryme/CopyFile.git
 
 git push -u origin master
 
+
+
+git checkout -- readme.txt 
+
