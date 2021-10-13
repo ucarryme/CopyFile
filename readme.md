@@ -14,6 +14,14 @@ git add  文件名
 
 git commit -m ”注释“
 
+回退：
+
+git reflog
+
+git reset --hard 6fcfc89
+
+
+
 连接：
 
 git remote add origin https://github.com/ucarryme/CopyFile.git
