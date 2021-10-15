@@ -32,5 +32,12 @@ git push -u origin master
 
 
 
+恢复:
+
 git checkout -- readme.txt 
 
+
+
+下载master分支下的文件：
+
+git clone -b master https://github.com/ucarryme/CopyFile.git
