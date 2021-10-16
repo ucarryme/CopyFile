@@ -41,3 +41,10 @@ git checkout -- readme.txt
 下载master分支下的文件：
 
 git clone -b master https://github.com/ucarryme/CopyFile.git
+
+
+
+
+
+![image-20211016200742565](E:\Git-repository\study-copyfile\image\image-20211016200742565.png)
+
