@@ -28,6 +28,9 @@ git remote add origin https://github.com/ucarryme/CopyFile.git
 
 推送：
 
+git pull origin master                 //把远程仓库master分支拉取到本地仓库master分支
+git push -u origin master              //把本地仓库的master分支推送到远程仓库master分支
+
 git push -u origin master
 
 
