@@ -1,0 +1,83 @@
+# encoding: utf-8
+# Release 19.0
+SetScriptVersion(Version="19.0.136")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+matlProp1 = material1.CreateProperty(
+    Name="Isotropic Hardening",
+    Definition="Bilinear",
+    Qualifiers={"Definition": "Bilinear", "Behavior": ""})
+matlProp1.SetVariableProperty(
+    VariableName="Yield Strength",
+    Property="Unit",
+    Value="MPa")
+matlProp1.SetVariableProperty(
+    VariableName="Tangent Modulus",
+    Property="Unit",
+    Value="MPa")
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Yield Strength"],
+    Values=[["300 [MPa]"]])
+matlProp1.SetData(
+    Variables=["Tangent Modulus"],
+    Values=[["10000 [MPa]"]])
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.OpenLibrary(
+    Name="General Materials",
+    Source="General_Materials.xml")
+matl1 = engineeringData1.ImportMaterial(
+    Name="Aluminum Alloy",
+    Source="General_Materials.xml")
+template2 = GetTemplate(TemplateName="EngData")
+system2 = template2.CreateSystem(
+    Position="Below",
+    RelativeTo=system1)
+engineeringDataComponent1 = system1.GetComponent(Name="Engineering Data")
+engineeringDataComponent2 = system2.GetComponent(Name="Engineering Data")
+engineeringDataComponent1.ReplaceWithShare(
+    TargetSystem=system1,
+    ComponentToShare=engineeringDataComponent2,
+    SourceSystem=system2)
+system3 = template1.CreateSystem()
+geometry1 = system3.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="D:/git-reprository/copyfile/有限元/7Geometry/7.6.2.x_t")
+geometryComponent1 = system1.GetComponent(Name="Geometry")
+geometryComponent2 = system3.GetComponent(Name="Geometry")
+geometryComponent1.ReplaceWithShare(
+    TargetSystem=system1,
+    ComponentToShare=geometryComponent2,
+    SourceSystem=system3)
+geometryComponent1.DeleteShare(System=system1)
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+engineeringData2 = system1.GetContainer(ComponentName="Engineering Data")
+material2 = engineeringData2.GetMaterial(Name="Structural Steel")
+matl2 = material2.Duplicate(TargetContainer=engineeringData2)
+model1.Exit()
+modelComponent1.Refresh()
+model1.Edit()
+model1.Exit()
+model1.Edit()
+model1.Exit()
+model1.Edit()
+system4 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+geometry2 = system4.GetContainer(ComponentName="Geometry")
+geometry2.SetFile(FilePath="D:/git-reprository/copyfile/有限元/7Geometry/7.5.2.stp")
+geometry2.Edit()
+model1.Exit()
+geometry2.Exit()
+modelComponent2 = system4.GetComponent(Name="Model")
+modelComponent2.Refresh()
+model2 = system4.GetContainer(ComponentName="Model")
+model2.Edit()
+model2.Exit()
+Save(Overwrite=True)
