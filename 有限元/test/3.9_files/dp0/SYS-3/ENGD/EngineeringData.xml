@@ -126,7 +126,7 @@
               <Qualifier name="Units">C</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr8">
+          <PropertyData property="pr7">
             <Data format="string">-</Data>
             <Qualifier name="Definition">Secant</Qualifier>
             <Qualifier name="Behavior">Isotropic</Qualifier>
@@ -146,7 +146,7 @@
             <Qualifier name="Definition">Constant Pressure</Qualifier>
             <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
             <Qualifier name="Symbol">Cᵨ</Qualifier>
-            <ParameterValue parameter="pa15" format="float">
+            <ParameterValue parameter="pa13" format="float">
               <Data>434</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [J kg^-1 C^-1]</Qualifier>
@@ -284,7 +284,7 @@
               <Qualifier name="Units">C</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr7">
+          <PropertyData property="pr8">
             <Data format="string">-</Data>
             <Qualifier name="Behavior">Isotropic</Qualifier>
             <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
@@ -295,14 +295,14 @@
               <Qualifier name="Normalized">True</Qualifier>
               <Qualifier name="Cached">True</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa13" format="float">
+            <ParameterValue parameter="pa14" format="float">
               <Data>200000000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [Pa]</Qualifier>
               <Qualifier name="Scale">1</Qualifier>
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa14" format="float">
+            <ParameterValue parameter="pa15" format="float">
               <Data>0.3</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -413,7 +413,7 @@
               <Qualifier name="Lower Limit">Program Controlled</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr7">
+          <PropertyData property="pr8">
             <Data format="string">-</Data>
             <Qualifier name="Behavior">Isotropic</Qualifier>
             <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
@@ -424,14 +424,14 @@
               <Qualifier name="Normalized">True</Qualifier>
               <Qualifier name="Cached">True</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa13" format="float">
+            <ParameterValue parameter="pa14" format="float">
               <Data>210000000000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [Pa]</Qualifier>
               <Qualifier name="Scale">1</Qualifier>
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa14" format="float">
+            <ParameterValue parameter="pa15" format="float">
               <Data>0.3</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -516,7 +516,7 @@
           <Name>Zero-Thermal-Strain Reference Temperature</Name>
           <Units name="Temperature" />
         </ParameterDetails>
-        <ParameterDetails id="pa15">
+        <ParameterDetails id="pa13">
           <Name>Specific Heat</Name>
           <Units name="Specific Heat Capacity" />
         </ParameterDetails>
@@ -562,11 +562,11 @@
         <ParameterDetails id="pa29">
           <Name>Relative Permeability</Name>
         </ParameterDetails>
-        <ParameterDetails id="pa13">
+        <ParameterDetails id="pa14">
           <Name>Young's Modulus</Name>
           <Units name="Stress" />
         </ParameterDetails>
-        <ParameterDetails id="pa14">
+        <ParameterDetails id="pa15">
           <Name>Poisson's Ratio</Name>
         </ParameterDetails>
         <ParameterDetails id="pa16">
@@ -599,10 +599,10 @@
           <Name>Coefficient of Thermal Expansion</Name>
         </PropertyDetails>
         <PropertyDetails id="pr7">
-          <Name>Elasticity</Name>
+          <Name>Zero-Thermal-Strain Reference Temperature</Name>
         </PropertyDetails>
         <PropertyDetails id="pr8">
-          <Name>Zero-Thermal-Strain Reference Temperature</Name>
+          <Name>Elasticity</Name>
         </PropertyDetails>
         <PropertyDetails id="pr9">
           <Name>Specific Heat</Name>

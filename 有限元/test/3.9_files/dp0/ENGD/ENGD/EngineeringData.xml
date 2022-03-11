@@ -730,33 +730,9 @@
           <Name>Temperature</Name>
           <Units name="Temperature" />
         </ParameterDetails>
-        <ParameterDetails id="pa9">
-          <Name>Tensile Yield Strength</Name>
-          <Units name="Stress" />
-        </ParameterDetails>
-        <ParameterDetails id="pa10">
-          <Name>Tensile Ultimate Strength</Name>
-          <Units name="Stress" />
-        </ParameterDetails>
-        <ParameterDetails id="pa11">
-          <Name>Coefficient of Thermal Expansion</Name>
-          <Units name="InvTemp1" />
-        </ParameterDetails>
         <ParameterDetails id="pa12">
           <Name>Zero-Thermal-Strain Reference Temperature</Name>
           <Units name="Temperature" />
-        </ParameterDetails>
-        <ParameterDetails id="pa13">
-          <Name>Specific Heat</Name>
-          <Units name="Specific Heat Capacity" />
-        </ParameterDetails>
-        <ParameterDetails id="pa14">
-          <Name>Thermal Conductivity</Name>
-          <Units name="Thermal Conductivity" />
-        </ParameterDetails>
-        <ParameterDetails id="pa15">
-          <Name>Alternating Stress</Name>
-          <Units name="Stress" />
         </ParameterDetails>
         <ParameterDetails id="pa16">
           <Name>Cycles</Name>
@@ -800,12 +776,36 @@
           <Name>Bulk Modulus</Name>
           <Units name="Stress" />
         </ParameterDetails>
+        <ParameterDetails id="pa29">
+          <Name>Relative Permeability</Name>
+        </ParameterDetails>
+        <ParameterDetails id="pa9">
+          <Name>Tensile Yield Strength</Name>
+          <Units name="Stress" />
+        </ParameterDetails>
+        <ParameterDetails id="pa10">
+          <Name>Tensile Ultimate Strength</Name>
+          <Units name="Stress" />
+        </ParameterDetails>
+        <ParameterDetails id="pa11">
+          <Name>Coefficient of Thermal Expansion</Name>
+          <Units name="InvTemp1" />
+        </ParameterDetails>
+        <ParameterDetails id="pa13">
+          <Name>Specific Heat</Name>
+          <Units name="Specific Heat Capacity" />
+        </ParameterDetails>
+        <ParameterDetails id="pa14">
+          <Name>Thermal Conductivity</Name>
+          <Units name="Thermal Conductivity" />
+        </ParameterDetails>
+        <ParameterDetails id="pa15">
+          <Name>Alternating Stress</Name>
+          <Units name="Stress" />
+        </ParameterDetails>
         <ParameterDetails id="pa28">
           <Name>Shear Modulus</Name>
           <Units name="Stress" />
-        </ParameterDetails>
-        <ParameterDetails id="pa29">
-          <Name>Relative Permeability</Name>
         </ParameterDetails>
         <PropertyDetails id="pr0">
           <Name>Color</Name>
